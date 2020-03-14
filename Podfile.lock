@@ -1,0 +1,22 @@
+PODS:
+  - SwiftLint (0.39.1)
+  - XCTest-Gherkin (0.19.1):
+    - XCTest-Gherkin/Core (= 0.19.1)
+  - XCTest-Gherkin/Core (0.19.1)
+
+DEPENDENCIES:
+  - SwiftLint
+  - XCTest-Gherkin
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
+    - XCTest-Gherkin
+
+SPEC CHECKSUMS:
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+  XCTest-Gherkin: f7cb7e6407a9196fdef068aed0becc321ef0b812
+
+PODFILE CHECKSUM: a97819ed1c844a2340778c02de198f54b5b0d047
+
+COCOAPODS: 1.9.1

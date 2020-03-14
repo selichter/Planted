@@ -1,0 +1,7 @@
+excluded:
+ - Pods
+ - ./PlantedUITests/*
+ - ./PlantedTests/*
+ - ./PlantedIntegrationTests/*
+ - ./Planted/AppDelegate.swift
+ - ./Planted/SceneDelegate.swift
