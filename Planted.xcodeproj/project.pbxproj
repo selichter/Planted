@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,7 +128,6 @@
 				BE1A01BF2651B9C8405CCFF2 /* Pods-PlantedIntegrationTests.debug.xcconfig */,
 				49205498118B6948D5ECD6EB /* Pods-PlantedIntegrationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -682,7 +681,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.Planted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -701,7 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.Planted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -723,7 +722,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planted.app/Planted";
 			};
@@ -746,7 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planted.app/Planted";
 			};
@@ -767,7 +766,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Planted;
 			};
@@ -788,7 +787,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Planted;
 			};
@@ -809,7 +808,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planted.app/Planted";
 			};
@@ -830,7 +829,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slichter.PlantedIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planted.app/Planted";
 			};

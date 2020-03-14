@@ -20,7 +20,7 @@ platform :ios do
   lane :test do
     scan(
       scheme: "Planted",
-      devices: ["iPhone 11"],
+      devices: ["iPhone X"],
     )
   end
 
