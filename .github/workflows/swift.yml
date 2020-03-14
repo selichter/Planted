@@ -1,0 +1,21 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: gemfile
+      run: bundle install
+    - name: cocoapods
+      run: bundle exec pod install
+    - name: Run tests
+      run: bundle exec fastlane test
