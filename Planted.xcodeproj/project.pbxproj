@@ -20,6 +20,9 @@
 		DF089602241D61D500C31261 /* PlantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089601241D61D500C31261 /* PlantedTests.swift */; };
 		DF08960D241D61D500C31261 /* PlantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF08960C241D61D500C31261 /* PlantedUITests.swift */; };
 		DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089620241D620100C31261 /* PlantedIntegrationTests.swift */; };
+		DFAE11F1241DC272007F727E /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE11F0241DC272007F727E /* TestingAppDelegate.swift */; };
+		DFAE11F3241DC358007F727E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE11F2241DC358007F727E /* main.swift */; };
+		DFAE11F7241DC4A2007F727E /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE11F6241DC4A2007F727E /* TestingAppDelegate.swift */; };
 		EBF14398FC08DC7E45862F2A /* Pods_Planted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B620633D5118D0B9F6763D60 /* Pods_Planted.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,9 @@
 		DF08961E241D620100C31261 /* PlantedIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantedIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF089620241D620100C31261 /* PlantedIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantedIntegrationTests.swift; sourceTree = "<group>"; };
 		DF089622241D620100C31261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAE11F0241DC272007F727E /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		DFAE11F2241DC358007F727E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DFAE11F6241DC4A2007F727E /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		E353AC74A10F45C19A2F8267 /* Pods-Planted-PlantedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted-PlantedUITests.release.xcconfig"; path = "Target Support Files/Pods-Planted-PlantedUITests/Pods-Planted-PlantedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7020C1424617E2FD9408201 /* Pods-Planted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted.release.xcconfig"; path = "Target Support Files/Pods-Planted/Pods-Planted.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +183,7 @@
 				DF0895F5241D61D500C31261 /* LaunchScreen.storyboard */,
 				DF0895F8241D61D500C31261 /* Info.plist */,
 				DF0895F0241D61D400C31261 /* Planted.xcdatamodeld */,
+				DFAE11F2241DC358007F727E /* main.swift */,
 			);
 			path = Planted;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 			children = (
 				DF089601241D61D500C31261 /* PlantedTests.swift */,
 				DF089603241D61D500C31261 /* Info.plist */,
+				DFAE11F0241DC272007F727E /* TestingAppDelegate.swift */,
 			);
 			path = PlantedTests;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			children = (
 				DF089620241D620100C31261 /* PlantedIntegrationTests.swift */,
 				DF089622241D620100C31261 /* Info.plist */,
+				DFAE11F6241DC4A2007F727E /* TestingAppDelegate.swift */,
 			);
 			path = PlantedIntegrationTests;
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0895F2241D61D400C31261 /* Planted.xcdatamodeld in Sources */,
+				DFAE11F3241DC358007F727E /* main.swift in Sources */,
 				DF0895EC241D61D400C31261 /* ViewController.swift in Sources */,
 				DF0895E8241D61D300C31261 /* AppDelegate.swift in Sources */,
 				DF0895EA241D61D400C31261 /* SceneDelegate.swift in Sources */,
@@ -494,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF089602241D61D500C31261 /* PlantedTests.swift in Sources */,
+				DFAE11F1241DC272007F727E /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */,
+				DFAE11F7241DC4A2007F727E /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
