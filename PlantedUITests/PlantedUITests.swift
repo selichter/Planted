@@ -11,9 +11,10 @@ import XCTest_Gherkin
 
 class PlantedUITests: XCTestCase {
 
-    func testHabitDisplay() {
+    func testPlantedLandingPage() {
         Given("I launch the app")
         And("I see a greeting displayed")
+        
         
     }
 
