@@ -12,7 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let textView = getTextView()
+        self.view.addSubview(textView)
+        
+    }
+    
+    func getTextView() -> UITextView {
+        let textView = UITextView()
+        textView.text = "Hello, Sarah"
+        textView.frame = CGRect(x: 50, y: 50, width: 100, height: 30)
+        textView.accessibilityLabel = "landingPageHeader"
+        return textView
     }
 
 }
