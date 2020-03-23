@@ -14,8 +14,7 @@ class PlantedUITests: XCTestCase {
     func testPlantedLandingPage() {
         Given("I launch the app")
         And("I see a greeting displayed")
-        
-        
+        And("I see a plants collection displayed")   
     }
 
     func testLaunchPerformance() {
@@ -45,6 +44,18 @@ class PlantedStepDefinitions: StepDefiner {
             let text = self.app.textViews["landingPageHeader"].value as! String
             XCTAssertEqual(text, "Hello, Sarah")
         }
+        
+        
+        step("I see a plants collection displayed") {
+            let firstCell = self.app.collectionViews.cells.element(boundBy: 0)
+            let secondCell = self.app.collectionViews.cells.element(boundBy: 1)
+            
+            XCTAssertEqual(firstCell.staticTexts["plantName"].label, "Fiddle Leaf Fig")
+            XCTAssertEqual(secondCell.staticTexts["plantName"].label, "Pilea")
+
+        }
+        
+
         
     }
 }
