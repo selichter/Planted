@@ -20,6 +20,8 @@
 		DF089602241D61D500C31261 /* PlantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089601241D61D500C31261 /* PlantedTests.swift */; };
 		DF08960D241D61D500C31261 /* PlantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF08960C241D61D500C31261 /* PlantedUITests.swift */; };
 		DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089620241D620100C31261 /* PlantedIntegrationTests.swift */; };
+		DFAE120324280C6F007F727E /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE120224280C6F007F727E /* PlantCell.swift */; };
+		DFAE120524283E09007F727E /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE120424283E09007F727E /* Plant.swift */; };
 		EBF14398FC08DC7E45862F2A /* Pods_Planted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B620633D5118D0B9F6763D60 /* Pods_Planted.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		DF08961E241D620100C31261 /* PlantedIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantedIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF089620241D620100C31261 /* PlantedIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantedIntegrationTests.swift; sourceTree = "<group>"; };
 		DF089622241D620100C31261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAE120224280C6F007F727E /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		DFAE120424283E09007F727E /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		E353AC74A10F45C19A2F8267 /* Pods-Planted-PlantedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted-PlantedUITests.release.xcconfig"; path = "Target Support Files/Pods-Planted-PlantedUITests/Pods-Planted-PlantedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7020C1424617E2FD9408201 /* Pods-Planted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted.release.xcconfig"; path = "Target Support Files/Pods-Planted/Pods-Planted.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +181,8 @@
 				DF0895F5241D61D500C31261 /* LaunchScreen.storyboard */,
 				DF0895F8241D61D500C31261 /* Info.plist */,
 				DF0895F0241D61D400C31261 /* Planted.xcdatamodeld */,
+				DFAE120224280C6F007F727E /* PlantCell.swift */,
+				DFAE120424283E09007F727E /* Plant.swift */,
 			);
 			path = Planted;
 			sourceTree = "<group>";
@@ -483,6 +489,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0895F2241D61D400C31261 /* Planted.xcdatamodeld in Sources */,
+				DFAE120524283E09007F727E /* Plant.swift in Sources */,
+				DFAE120324280C6F007F727E /* PlantCell.swift in Sources */,
 				DF0895EC241D61D400C31261 /* ViewController.swift in Sources */,
 				DF0895E8241D61D300C31261 /* AppDelegate.swift in Sources */,
 				DF0895EA241D61D400C31261 /* SceneDelegate.swift in Sources */,
