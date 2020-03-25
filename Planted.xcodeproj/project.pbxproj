@@ -12,7 +12,7 @@
 		73708578C6E9F95409ACCBB6 /* Pods_Planted_PlantedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5F8A406BE1EFF92DDAE7C /* Pods_Planted_PlantedUITests.framework */; };
 		DF0895E8241D61D300C31261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0895E7241D61D300C31261 /* AppDelegate.swift */; };
 		DF0895EA241D61D400C31261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0895E9241D61D400C31261 /* SceneDelegate.swift */; };
-		DF0895EC241D61D400C31261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0895EB241D61D400C31261 /* ViewController.swift */; };
+		DF0895EC241D61D400C31261 /* PlantsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0895EB241D61D400C31261 /* PlantsCollectionViewController.swift */; };
 		DF0895EF241D61D400C31261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0895ED241D61D400C31261 /* Main.storyboard */; };
 		DF0895F2241D61D400C31261 /* Planted.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF0895F0241D61D400C31261 /* Planted.xcdatamodeld */; };
 		DF0895F4241D61D500C31261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0895F3241D61D500C31261 /* Assets.xcassets */; };
@@ -20,8 +20,13 @@
 		DF089602241D61D500C31261 /* PlantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089601241D61D500C31261 /* PlantedTests.swift */; };
 		DF08960D241D61D500C31261 /* PlantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF08960C241D61D500C31261 /* PlantedUITests.swift */; };
 		DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089620241D620100C31261 /* PlantedIntegrationTests.swift */; };
+		DF42CC91242AEEFD004E237D /* PlantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC90242AEEFD004E237D /* PlantViewModelTests.swift */; };
+		DF42CC93242AEF7E004E237D /* PlantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC92242AEF7E004E237D /* PlantsViewModelTests.swift */; };
+		DF42CC95242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */; };
 		DFAE120324280C6F007F727E /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE120224280C6F007F727E /* PlantCell.swift */; };
 		DFAE120524283E09007F727E /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE120424283E09007F727E /* Plant.swift */; };
+		DFAE12072428EB6B007F727E /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE12062428EB6B007F727E /* PlantViewController.swift */; };
+		DFAE1209242A44CB007F727E /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE1208242A44CB007F727E /* PlantsViewModel.swift */; };
 		EBF14398FC08DC7E45862F2A /* Pods_Planted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B620633D5118D0B9F6763D60 /* Pods_Planted.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +68,7 @@
 		DF0895E4241D61D300C31261 /* Planted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0895E7241D61D300C31261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0895E9241D61D400C31261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF0895EB241D61D400C31261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF0895EB241D61D400C31261 /* PlantsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionViewController.swift; sourceTree = "<group>"; };
 		DF0895EE241D61D400C31261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF0895F1241D61D400C31261 /* Planted.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planted.xcdatamodel; sourceTree = "<group>"; };
 		DF0895F3241D61D500C31261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,8 +83,13 @@
 		DF08961E241D620100C31261 /* PlantedIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantedIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF089620241D620100C31261 /* PlantedIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantedIntegrationTests.swift; sourceTree = "<group>"; };
 		DF089622241D620100C31261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF42CC90242AEEFD004E237D /* PlantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModelTests.swift; sourceTree = "<group>"; };
+		DF42CC92242AEF7E004E237D /* PlantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModelTests.swift; sourceTree = "<group>"; };
+		DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionViewControllerTests.swift; sourceTree = "<group>"; };
 		DFAE120224280C6F007F727E /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
 		DFAE120424283E09007F727E /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		DFAE12062428EB6B007F727E /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		DFAE1208242A44CB007F727E /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
 		E353AC74A10F45C19A2F8267 /* Pods-Planted-PlantedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted-PlantedUITests.release.xcconfig"; path = "Target Support Files/Pods-Planted-PlantedUITests/Pods-Planted-PlantedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7020C1424617E2FD9408201 /* Pods-Planted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planted.release.xcconfig"; path = "Target Support Files/Pods-Planted/Pods-Planted.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +185,7 @@
 			children = (
 				DF0895E7241D61D300C31261 /* AppDelegate.swift */,
 				DF0895E9241D61D400C31261 /* SceneDelegate.swift */,
-				DF0895EB241D61D400C31261 /* ViewController.swift */,
+				DF0895EB241D61D400C31261 /* PlantsCollectionViewController.swift */,
 				DF0895ED241D61D400C31261 /* Main.storyboard */,
 				DF0895F3241D61D500C31261 /* Assets.xcassets */,
 				DF0895F5241D61D500C31261 /* LaunchScreen.storyboard */,
@@ -183,6 +193,8 @@
 				DF0895F0241D61D400C31261 /* Planted.xcdatamodeld */,
 				DFAE120224280C6F007F727E /* PlantCell.swift */,
 				DFAE120424283E09007F727E /* Plant.swift */,
+				DFAE12062428EB6B007F727E /* PlantViewController.swift */,
+				DFAE1208242A44CB007F727E /* PlantsViewModel.swift */,
 			);
 			path = Planted;
 			sourceTree = "<group>";
@@ -192,6 +204,8 @@
 			children = (
 				DF089601241D61D500C31261 /* PlantedTests.swift */,
 				DF089603241D61D500C31261 /* Info.plist */,
+				DF42CC90242AEEFD004E237D /* PlantViewModelTests.swift */,
+				DF42CC92242AEF7E004E237D /* PlantsViewModelTests.swift */,
 			);
 			path = PlantedTests;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 			children = (
 				DF089620241D620100C31261 /* PlantedIntegrationTests.swift */,
 				DF089622241D620100C31261 /* Info.plist */,
+				DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */,
 			);
 			path = PlantedIntegrationTests;
 			sourceTree = "<group>";
@@ -490,9 +505,11 @@
 			files = (
 				DF0895F2241D61D400C31261 /* Planted.xcdatamodeld in Sources */,
 				DFAE120524283E09007F727E /* Plant.swift in Sources */,
+				DFAE12072428EB6B007F727E /* PlantViewController.swift in Sources */,
 				DFAE120324280C6F007F727E /* PlantCell.swift in Sources */,
-				DF0895EC241D61D400C31261 /* ViewController.swift in Sources */,
+				DF0895EC241D61D400C31261 /* PlantsCollectionViewController.swift in Sources */,
 				DF0895E8241D61D300C31261 /* AppDelegate.swift in Sources */,
+				DFAE1209242A44CB007F727E /* PlantsViewModel.swift in Sources */,
 				DF0895EA241D61D400C31261 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +518,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF42CC93242AEF7E004E237D /* PlantsViewModelTests.swift in Sources */,
+				DF42CC91242AEEFD004E237D /* PlantViewModelTests.swift in Sources */,
 				DF089602241D61D500C31261 /* PlantedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF42CC95242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift in Sources */,
 				DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

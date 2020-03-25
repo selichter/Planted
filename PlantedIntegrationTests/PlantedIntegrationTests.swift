@@ -8,6 +8,21 @@
 
 import XCTest
 
+extension XCTestCase {
+    func instantiateWithoutLoad<T>(fromStoryboard name: String, withIdentifier identifier: String) -> T {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as! T
+        return viewController
+    }
+
+    func instantiateViewController<T>(fromStoryboard name: String, withIdentifier identifier: String) -> T {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as! T
+        _ = (viewController as! UIViewController).view
+        return viewController
+    }
+}
+
 class PlantedIntegrationTests: XCTestCase {
 
     override func setUp() {
