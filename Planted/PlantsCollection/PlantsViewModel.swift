@@ -15,12 +15,3 @@ class PlantsViewModel {
         plants = plantsData.map {PlantViewModel(plant: $0)}
     }
 }
-
-
-class PlantViewModel {
-    let name: String
-    init(plant: Plant) {
-        name = plant.name
-    }
-}
-

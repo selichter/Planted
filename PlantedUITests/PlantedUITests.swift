@@ -15,7 +15,7 @@ class PlantedUITests: XCTestCase {
         Given("I launch the app")
         And("I see a plants collection displayed")
         When("I tap on the fiddle leaf fig cell")
-        Then("I see the fiddle leaf fig view")
+        Then("I see the single plant view")
     }
 
     func testLaunchPerformance() {
@@ -54,9 +54,17 @@ class PlantedStepDefinitions: StepDefiner {
             firstCell.tap()
         }
         
-        step("I see the fiddle leaf fig view") {
-            let text = self.app.staticTexts["plantPageHeading"].label
-            XCTAssertEqual(text, "Fiddle Leaf Fig")
+        step("I see the single plant view") {
+            let pageHeading = self.app.staticTexts["plantPageHeading"].label
+            let location = self.app.staticTexts["locationLabel"].label
+            let light = self.app.staticTexts["lightLabel"].label
+            let date = self.app.staticTexts["dateLabel"].label
+            
+            XCTAssertEqual(pageHeading, "Fiddle Leaf Fig")
+            XCTAssertEqual(location, "Living Room")
+            XCTAssertEqual(light, "Full Sun")
+            XCTAssertEqual(date, "February 29, 2020")
+            
         }
         
     }

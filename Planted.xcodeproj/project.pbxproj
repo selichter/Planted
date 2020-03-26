@@ -20,6 +20,9 @@
 		DF089602241D61D500C31261 /* PlantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089601241D61D500C31261 /* PlantedTests.swift */; };
 		DF08960D241D61D500C31261 /* PlantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF08960C241D61D500C31261 /* PlantedUITests.swift */; };
 		DF089621241D620100C31261 /* PlantedIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF089620241D620100C31261 /* PlantedIntegrationTests.swift */; };
+		DF1248FC242B9290003A000F /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1248FB242B9290003A000F /* PlantViewModel.swift */; };
+		DF124900242B93A5003A000F /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1248FF242B93A5003A000F /* PlantData.swift */; };
+		DF124903242B97D5003A000F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF124902242B97D5003A000F /* DateExtension.swift */; };
 		DF42CC91242AEEFD004E237D /* PlantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC90242AEEFD004E237D /* PlantViewModelTests.swift */; };
 		DF42CC93242AEF7E004E237D /* PlantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC92242AEF7E004E237D /* PlantsViewModelTests.swift */; };
 		DF42CC95242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */; };
@@ -83,6 +86,9 @@
 		DF08961E241D620100C31261 /* PlantedIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantedIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF089620241D620100C31261 /* PlantedIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantedIntegrationTests.swift; sourceTree = "<group>"; };
 		DF089622241D620100C31261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1248FB242B9290003A000F /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		DF1248FF242B93A5003A000F /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
+		DF124902242B97D5003A000F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		DF42CC90242AEEFD004E237D /* PlantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModelTests.swift; sourceTree = "<group>"; };
 		DF42CC92242AEF7E004E237D /* PlantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModelTests.swift; sourceTree = "<group>"; };
 		DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionViewControllerTests.swift; sourceTree = "<group>"; };
@@ -183,18 +189,18 @@
 		DF0895E6241D61D300C31261 /* Planted */ = {
 			isa = PBXGroup;
 			children = (
+				DF124901242B97C6003A000F /* Utils */,
+				DF1248FE242B936D003A000F /* Plant */,
+				DF1248FD242B9333003A000F /* PlantsCollection */,
 				DF0895E7241D61D300C31261 /* AppDelegate.swift */,
 				DF0895E9241D61D400C31261 /* SceneDelegate.swift */,
-				DF0895EB241D61D400C31261 /* PlantsCollectionViewController.swift */,
 				DF0895ED241D61D400C31261 /* Main.storyboard */,
 				DF0895F3241D61D500C31261 /* Assets.xcassets */,
 				DF0895F5241D61D500C31261 /* LaunchScreen.storyboard */,
 				DF0895F8241D61D500C31261 /* Info.plist */,
 				DF0895F0241D61D400C31261 /* Planted.xcdatamodeld */,
-				DFAE120224280C6F007F727E /* PlantCell.swift */,
 				DFAE120424283E09007F727E /* Plant.swift */,
-				DFAE12062428EB6B007F727E /* PlantViewController.swift */,
-				DFAE1208242A44CB007F727E /* PlantsViewModel.swift */,
+				DF1248FF242B93A5003A000F /* PlantData.swift */,
 			);
 			path = Planted;
 			sourceTree = "<group>";
@@ -227,6 +233,33 @@
 				DF42CC94242AF2E4004E237D /* PlantsCollectionViewControllerTests.swift */,
 			);
 			path = PlantedIntegrationTests;
+			sourceTree = "<group>";
+		};
+		DF1248FD242B9333003A000F /* PlantsCollection */ = {
+			isa = PBXGroup;
+			children = (
+				DF0895EB241D61D400C31261 /* PlantsCollectionViewController.swift */,
+				DFAE1208242A44CB007F727E /* PlantsViewModel.swift */,
+				DFAE120224280C6F007F727E /* PlantCell.swift */,
+			);
+			path = PlantsCollection;
+			sourceTree = "<group>";
+		};
+		DF1248FE242B936D003A000F /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE12062428EB6B007F727E /* PlantViewController.swift */,
+				DF1248FB242B9290003A000F /* PlantViewModel.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		DF124901242B97C6003A000F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF124902242B97D5003A000F /* DateExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,8 +541,11 @@
 				DFAE12072428EB6B007F727E /* PlantViewController.swift in Sources */,
 				DFAE120324280C6F007F727E /* PlantCell.swift in Sources */,
 				DF0895EC241D61D400C31261 /* PlantsCollectionViewController.swift in Sources */,
+				DF124900242B93A5003A000F /* PlantData.swift in Sources */,
+				DF124903242B97D5003A000F /* DateExtension.swift in Sources */,
 				DF0895E8241D61D300C31261 /* AppDelegate.swift in Sources */,
 				DFAE1209242A44CB007F727E /* PlantsViewModel.swift in Sources */,
+				DF1248FC242B9290003A000F /* PlantViewModel.swift in Sources */,
 				DF0895EA241D61D400C31261 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

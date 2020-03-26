@@ -11,8 +11,15 @@ import XCTest
 
 class PlantsCollectionIntegrationTests: XCTestCase {
     var plantsCollectionViewController: PlantsViewController!
-    let jadePlant = Plant(name: "Jade")
-    let spiderPlant = Plant(name: "Spider Plant")
+    let africanViolet = Plant(name: "African Violet",
+                              location: .kitchen,
+                              lightConditions: .sun,
+                              datePlanted: Date())
+    
+    let cactus = Plant(name: "Cactus",
+                       location: .office,
+                       lightConditions: .shade,
+                       datePlanted: Date("2020-02-28"))
 
     override func setUp() {
         super.setUp()
@@ -21,13 +28,13 @@ class PlantsCollectionIntegrationTests: XCTestCase {
 
     func testPlantCellsDisplayValues() {
         plantsCollectionViewController.loadView()
-        plantsCollectionViewController.render(PlantsViewModel([jadePlant, spiderPlant]))
+        plantsCollectionViewController.render(PlantsViewModel([africanViolet, cactus]))
 
         let plantOne = plantsCollectionViewController.collectionView(plantsCollectionViewController.collectionView, cellForItemAt: IndexPath(row: 0, section: 0)) as! Plantcell
 
         let plantTwo = plantsCollectionViewController.collectionView(plantsCollectionViewController.collectionView, cellForItemAt: IndexPath(row: 1, section: 0)) as! Plantcell
         
-        XCTAssertEqual(plantOne.nameLabel.text, "Jade")
-        XCTAssertEqual(plantTwo.nameLabel.text, "Spider Plant")
+        XCTAssertEqual(plantOne.nameLabel.text, "African Violet")
+        XCTAssertEqual(plantTwo.nameLabel.text, "Cactus")
     }
 }
