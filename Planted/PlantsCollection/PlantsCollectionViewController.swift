@@ -11,12 +11,6 @@ import UIKit
 
 class PlantsViewController: UICollectionViewController {
     var plantsVM: PlantsViewModel!
-    
-    let stagedPlantData = [
-        Plant(name: "Fiddle Leaf Fig"),
-        Plant(name: "Pilea"),
-        Plant(name: "Aloe")
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()

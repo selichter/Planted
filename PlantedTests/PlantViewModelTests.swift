@@ -4,11 +4,19 @@ import XCTest
 @testable import Planted
 
 class PlantViewModelTests: XCTestCase {
-
+    
     func testPropertiesAreSet() {
-        let plant = Plant(name: "Test Plant")
-        let pvm = PlantViewModel(plant: plant)
-        XCTAssertEqual(pvm.name, plant.name)
+        let aloe = Plant(name: "Monstera",
+                         location: .office,
+                         lightConditions: .dark,
+                         datePlanted: Date("2018-09-23"))
+        
+        let pvm = PlantViewModel(plant: aloe)
+        
+        XCTAssertEqual(pvm.name, aloe.name)
+        XCTAssertEqual(pvm.location, aloe.location.rawValue)
+        XCTAssertEqual(pvm.lightCondition, aloe.lightConditions.rawValue)
+        XCTAssertEqual(pvm.datePlanted, "September 23, 2018")
     }
 
 }

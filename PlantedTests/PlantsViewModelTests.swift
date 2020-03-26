@@ -12,10 +12,19 @@ import XCTest
 @testable import Planted
 
 class HabitsViewModelTests: XCTestCase {
+    let africanViolet = Plant(name: "African Violet",
+                              location: .kitchen,
+                              lightConditions: .sun,
+                              datePlanted: Date())
+    
+    let cactus = Plant(name: "Cactus",
+                       location: .office,
+                       lightConditions: .shade,
+                       datePlanted: Date("2020-02-28"))
     
     
     func testPlantsAreSet() {
-        let plantData = [Plant(name: "African Violet"), Plant(name: "Cactus")]
+        let plantData = [africanViolet, cactus]
         let plantsVM = PlantsViewModel(plantData)
         
         XCTAssertEqual(plantsVM.plants.count, 2)
